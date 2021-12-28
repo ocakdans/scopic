@@ -1,0 +1,95 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "user calls the base url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1730705400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user calls the base url",
+            "match": {
+              "location": "stepdefinitions.ReqResBaseUrl.userCallsTheBaseUrl()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-28T10:06:46.287Z",
+        "line": 5,
+        "name": "Get single user success",
+        "description": "",
+        "id": "get-single-user;get-single-user-success",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 365335100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user call get single user request",
+            "match": {
+              "location": "stepdefinitions.WSStepDefinitions.userCallGetSingleUserRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3823425200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets the single user response",
+            "match": {
+              "location": "stepdefinitions.WSStepDefinitions.userGetsTheSingleUserResponse()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1282518400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verifies the names of the id",
+            "match": {
+              "location": "stepdefinitions.WSStepDefinitions.verifiesTheNamesOfTheId()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@getSingleUser"
+          }
+        ]
+      }
+    ],
+    "name": "Get single user",
+    "description": "",
+    "id": "get-single-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/reqresgetsingleuser.feature",
+    "tags": [
+      {
+        "name": "@getSingleUser",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
