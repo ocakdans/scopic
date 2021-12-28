@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/reqresgetsingleuser.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/reqrespatchsingleuser.feature");
 formatter.feature({
-  "name": "Get single user",
+  "name": "Patch single user success",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@getSingleUser"
+      "name": "@patchSingleUser"
     }
   ]
 });
@@ -25,41 +25,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Get single user success",
+  "name": "user update only name",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@getSingleUser"
+      "name": "@patchSingleUser"
     }
   ]
 });
 formatter.step({
-  "name": "user call get single user request",
+  "name": "user call patch single user request",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.WSStepDefinitions.userCallGetSingleUserRequest()"
+  "location": "stepdefinitions.WSStepDefinitions.userCallPatchSingleUserRequest()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user gets the single user response",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.WSStepDefinitions.userGetsTheSingleUserResponse()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verifies the names of the id",
+  "name": "verifies the patch response with expected data",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.WSStepDefinitions.verifiesTheNamesOfTheId()"
+  "location": "stepdefinitions.WSStepDefinitions.verifiesThePatchResponseWithExpectedData()"
 });
 formatter.result({
   "status": "passed"

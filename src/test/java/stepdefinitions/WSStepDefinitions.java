@@ -20,6 +20,8 @@ public class WSStepDefinitions {
     TestData reqObj = new TestData();
     Map<String, Object> postReqBody;
     Map<String, Object> putReqBody;
+    Map<String, Object> patchReqBody;
+    JsonPath json;
 
 
 
@@ -59,7 +61,7 @@ public class WSStepDefinitions {
 
     @Then("verifies the response with expected data")
     public void verifiesTheResponseWithExpectedData() {
-        JsonPath json = response.jsonPath();
+        json = response.jsonPath();
         assertEquals(201, response.getStatusCode());
         assertEquals(postReqBody.get("name"), json.getString("name"));
         assertEquals(postReqBody.get("job"), json.getString("job"));
@@ -70,6 +72,7 @@ public class WSStepDefinitions {
     public void userCallPutSingleUserRequest() {
         ReqResBaseUrl.baseUrl.pathParams("usersPath", "users",
                 "id",2);
+
         putReqBody = reqObj.putTestData();
         response = given().
                 contentType(ContentType.JSON).
@@ -77,5 +80,37 @@ public class WSStepDefinitions {
                 body(putReqBody).
                 when().
                 post("{usersPath}/{id}");
+        response.prettyPrint();
+    }
+
+    @Then("verifies the put response with expected data")
+    public void verifiesThePutResponseWithExpectedData() {
+        json = response.jsonPath();
+        assertEquals(201, response.getStatusCode());
+        assertEquals(putReqBody.get("name"), json.getString("name"));
+        assertEquals(putReqBody.get("job"), json.getString("job"));
+    }
+
+    @When("user call patch single user request")
+    public void userCallPatchSingleUserRequest() {
+        ReqResBaseUrl.baseUrl.pathParams("usersPath", "users",
+                "id",2);
+
+        patchReqBody = reqObj.patchTestData();
+        response = given().
+                contentType(ContentType.JSON).
+                spec(ReqResBaseUrl.baseUrl).
+                body(patchReqBody).
+                when().
+                post("{usersPath}/{id}");
+        response.prettyPrint();
+    }
+
+    @Then("verifies the patch response with expected data")
+    public void verifiesThePatchResponseWithExpectedData() {
+        json = response.jsonPath();
+        assertEquals(201, response.getStatusCode());
+        assertEquals(patchReqBody.get("name"), json.getString("name"));
+
     }
 }

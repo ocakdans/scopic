@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
         //Path of step definitions
         glue = "stepdefinitions" ,
         //tags = "@cryspositive or @crysnegative",
-        tags = "@getSingleUser",
+        tags = "@patchSingleUser",
         dryRun = false
 
 

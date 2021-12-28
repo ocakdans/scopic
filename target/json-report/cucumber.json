@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1730705400,
+              "duration": 920869600,
               "status": "passed"
             },
             "line": 4,
@@ -24,66 +24,54 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-28T10:06:46.287Z",
+        "start_timestamp": "2021-12-28T10:58:03.078Z",
         "line": 5,
-        "name": "Get single user success",
+        "name": "user update only name",
         "description": "",
-        "id": "get-single-user;get-single-user-success",
+        "id": "patch-single-user-success;user-update-only-name",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 365335100,
+              "duration": 1730634000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user call get single user request",
+            "name": "user call patch single user request",
             "match": {
-              "location": "stepdefinitions.WSStepDefinitions.userCallGetSingleUserRequest()"
+              "location": "stepdefinitions.WSStepDefinitions.userCallPatchSingleUserRequest()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3823425200,
+              "duration": 650479300,
               "status": "passed"
             },
             "line": 7,
-            "name": "user gets the single user response",
+            "name": "verifies the patch response with expected data",
             "match": {
-              "location": "stepdefinitions.WSStepDefinitions.userGetsTheSingleUserResponse()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1282518400,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "verifies the names of the id",
-            "match": {
-              "location": "stepdefinitions.WSStepDefinitions.verifiesTheNamesOfTheId()"
+              "location": "stepdefinitions.WSStepDefinitions.verifiesThePatchResponseWithExpectedData()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@getSingleUser"
+            "name": "@patchSingleUser"
           }
         ]
       }
     ],
-    "name": "Get single user",
+    "name": "Patch single user success",
     "description": "",
-    "id": "get-single-user",
+    "id": "patch-single-user-success",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/reqresgetsingleuser.feature",
+    "uri": "file:src/test/resources/features/reqrespatchsingleuser.feature",
     "tags": [
       {
-        "name": "@getSingleUser",
+        "name": "@patchSingleUser",
         "type": "Tag",
         "location": {
           "line": 1,

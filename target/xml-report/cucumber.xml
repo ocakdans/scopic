@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.012">
-    <testcase classname="Get single user" name="Get single user success" time="7.322">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.004">
+    <testcase classname="Patch single user success" name="user update only name" time="3.378">
         <system-out>
             <![CDATA[Given user calls the base url...............................................passed
-When user call get single user request......................................passed
-And user gets the single user response......................................passed
-Then verifies the names of the id...........................................passed
+When user call patch single user request....................................passed
+Then verifies the patch response with expected data.........................passed
 ]]>
         </system-out>
     </testcase>
