@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.233">
-    <testcase classname="Patch single user success" name="user update only name" time="4.443">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="33.887">
+    <testcase classname="Amazon Success Login" name="Success Login via Email" time="33.333">
         <system-out>
-            <![CDATA[Given user calls the base url...............................................passed
-When user call patch single user request....................................passed
-Then verifies the patch response with expected data.........................passed
+            <![CDATA[When user is on the amazon homepage.........................................passed
+And user hover over account&lists...........................................passed
+And user clicks on Sign in button...........................................passed
+And user enters valid "selim.ocakdan@gmail.com" address.....................passed
+And user clicks on Continue button..........................................passed
+And user enters valid "Aso350000n"..........................................passed
+And user clicks on second Sign in button....................................passed
+Then user verifies name.....................................................passed
 ]]>
         </system-out>
     </testcase>

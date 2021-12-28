@@ -1,55 +1,156 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/reqrespatchsingleuser.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/amazonlogin.feature");
 formatter.feature({
-  "name": "Patch single user success",
+  "name": "Amazon Success Login",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@patchSingleUser"
+      "name": "@amazonLogin"
     }
   ]
 });
-formatter.background({
-  "name": "user calls the base url",
+formatter.scenarioOutline({
+  "name": "Success Login via Email",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "user calls the base url",
-  "keyword": "Given "
+  "name": "user is on the amazon homepage",
+  "keyword": "When "
 });
-formatter.match({
-  "location": "stepdefinitions.ReqResBaseUrl.userCallsTheBaseUrl()"
+formatter.step({
+  "name": "user hover over account\u0026lists",
+  "keyword": "And "
 });
-formatter.result({
-  "status": "passed"
+formatter.step({
+  "name": "user clicks on Sign in button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user enters valid \"\u003ce-mail\u003e\" address",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user clicks on Continue button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user enters valid \"\u003cpassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user clicks on second Sign in button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user verifies name",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "e-mail",
+        "password"
+      ]
+    },
+    {
+      "cells": [
+        "selim.ocakdan@gmail.com",
+        "Aso350000n"
+      ]
+    }
+  ]
 });
 formatter.scenario({
-  "name": "user update only name",
+  "name": "Success Login via Email",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@patchSingleUser"
+      "name": "@amazonLogin"
     }
   ]
 });
 formatter.step({
-  "name": "user call patch single user request",
+  "name": "user is on the amazon homepage",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.WSStepDefinitions.userCallPatchSingleUserRequest()"
+  "location": "stepdefinitions.StepDefinitions.user_is_on_the_amazon_homepage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verifies the patch response with expected data",
+  "name": "user hover over account\u0026lists",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.StepDefinitions.userHoverOverAccountLists()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Sign in button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.StepDefinitions.userClicksOnSignInButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters valid \"selim.ocakdan@gmail.com\" address",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.StepDefinitions.userEntersValidAddress(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Continue button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.StepDefinitions.userClicksOnContinueButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters valid \"Aso350000n\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.StepDefinitions.userEntersValid(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on second Sign in button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.StepDefinitions.userClicksOnSecondSignInButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies name",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.WSStepDefinitions.verifiesThePatchResponseWithExpectedData()"
+  "location": "stepdefinitions.StepDefinitions.userVerifiesName()"
 });
 formatter.result({
   "status": "passed"

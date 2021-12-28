@@ -24,31 +24,30 @@ public class WSStepDefinitions {
     JsonPath json;
 
 
-
     //Get Request Single User
     @When("user call get single user request")
     public void userCallGetSingleUserRequest() {
-        ReqResBaseUrl.baseUrl.pathParams("usersPath" , "users",
-                            "id", 2) ;
+        ReqResBaseUrl.baseUrl.pathParams("usersPath", "users",
+                "id", 2);
     }
 
     @And("user gets the single user response")
     public void userGetsTheSingleUserResponse() {
-         response= given().spec(ReqResBaseUrl.baseUrl).when().get("{usersPath}/{id}");
+        response = given().spec(ReqResBaseUrl.baseUrl).when().get("{usersPath}/{id}");
         response.prettyPrint();
     }
 
     @Then("verifies the names of the id")
     public void verifiesTheNamesOfTheId() {
         response.then().assertThat().statusCode(200).body("data.first_name", equalTo("Janet"),
-                "data.last_name",equalTo("Weaver"))        ;
+                "data.last_name", equalTo("Weaver"));
     }
 
     //Post Request Single User
     @When("user call post single user request")
     public void userCallPostSingleUserRequest() {
         ReqResBaseUrl.baseUrl.pathParams("usersPath", "users");
-        postReqBody= reqObj.postTestData();
+        postReqBody = reqObj.postTestData();
         response = given().
                 contentType(ContentType.JSON).
                 spec(ReqResBaseUrl.baseUrl).
@@ -73,7 +72,7 @@ public class WSStepDefinitions {
     @When("user call put single user request")
     public void userCallPutSingleUserRequest() {
         ReqResBaseUrl.baseUrl.pathParams("usersPath", "users",
-                "id",2);
+                "id", 2);
 
         putReqBody = reqObj.putTestData();
         response = given().
@@ -97,7 +96,7 @@ public class WSStepDefinitions {
     @When("user call patch single user request")
     public void userCallPatchSingleUserRequest() {
         ReqResBaseUrl.baseUrl.pathParams("usersPath", "users",
-                "id",2);
+                "id", 2);
 
         patchReqBody = reqObj.patchTestData();
         response = given().
@@ -120,9 +119,9 @@ public class WSStepDefinitions {
     //Delete Request Single User
     @When("user call delete single user request")
     public void userCallDeleteSingleUserRequest() {
-        ReqResBaseUrl.baseUrl.pathParams("usersPath" , "users",
-                "id", 2) ;
-        response= given().spec(ReqResBaseUrl.baseUrl).when().delete("{usersPath}/{id}");
+        ReqResBaseUrl.baseUrl.pathParams("usersPath", "users",
+                "id", 2);
+        response = given().spec(ReqResBaseUrl.baseUrl).when().delete("{usersPath}/{id}");
         response.prettyPrint();
     }
 }

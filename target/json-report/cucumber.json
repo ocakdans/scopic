@@ -3,75 +3,138 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "user calls the base url",
+        "start_timestamp": "2021-12-28T12:26:57.910Z",
+        "line": 17,
+        "name": "Success Login via Email",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1175856300,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user calls the base url",
-            "match": {
-              "location": "stepdefinitions.ReqResBaseUrl.userCallsTheBaseUrl()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-12-28T12:13:19.264Z",
-        "line": 5,
-        "name": "user update only name",
-        "description": "",
-        "id": "patch-single-user-success;user-update-only-name",
+        "id": "amazon-success-login;success-login-via-email;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2198120300,
+              "duration": 23323342200,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user call patch single user request",
+            "line": 5,
+            "name": "user is on the amazon homepage",
             "match": {
-              "location": "stepdefinitions.WSStepDefinitions.userCallPatchSingleUserRequest()"
+              "location": "stepdefinitions.StepDefinitions.user_is_on_the_amazon_homepage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 981376400,
+              "duration": 204252600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user hover over account\u0026lists",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.userHoverOverAccountLists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1446721300,
               "status": "passed"
             },
             "line": 7,
-            "name": "verifies the patch response with expected data",
+            "name": "user clicks on Sign in button",
             "match": {
-              "location": "stepdefinitions.WSStepDefinitions.verifiesThePatchResponseWithExpectedData()"
+              "location": "stepdefinitions.StepDefinitions.userClicksOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185296500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters valid \"selim.ocakdan@gmail.com\" address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"selim.ocakdan@gmail.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.userEntersValidAddress(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1186262100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Continue button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.userClicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96546800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters valid \"Aso350000n\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aso350000n\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.StepDefinitions.userEntersValid(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83158300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on second Sign in button",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.userClicksOnSecondSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6746360000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user verifies name",
+            "match": {
+              "location": "stepdefinitions.StepDefinitions.userVerifiesName()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@patchSingleUser"
+            "name": "@amazonLogin"
           }
         ]
       }
     ],
-    "name": "Patch single user success",
+    "name": "Amazon Success Login",
     "description": "",
-    "id": "patch-single-user-success",
+    "id": "amazon-success-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/reqrespatchsingleuser.feature",
+    "uri": "file:src/test/resources/features/amazonlogin.feature",
     "tags": [
       {
-        "name": "@patchSingleUser",
+        "name": "@amazonLogin",
         "type": "Tag",
         "location": {
           "line": 1,

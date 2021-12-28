@@ -32,9 +32,9 @@ public class StepDefinitions {
         homePage.signInButton.click();
     }
 
-    @And("user enters valid e-mail address")
-    public void userEntersValidEMailAddress() {
-        signInPage.email.sendKeys(ConfigReader.getProperty("validEmail"));
+    @And("user enters valid {string} address")
+    public void userEntersValidAddress(String arg0) {
+        signInPage.email.sendKeys(arg0);
 
     }
 
@@ -43,9 +43,10 @@ public class StepDefinitions {
         signInPage.continueButton.click();
     }
 
-    @And("user enters valid password")
-    public void userEntersValidPassword() {
-        signInPage.password.sendKeys(ConfigReader.getProperty("validPassword"));
+
+    @And("user enters valid {string}")
+    public void userEntersValid(String arg0) {
+        signInPage.password.sendKeys(arg0);
     }
 
     @And("user clicks on second Sign in button")
@@ -65,6 +66,9 @@ public class StepDefinitions {
         Assert.assertEquals("Not equal", actualName, afterLoginPage.userName.getText().toString()) ;
 
     }
+
+
+
 
 
 }
