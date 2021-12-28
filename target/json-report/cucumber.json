@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 920869600,
+              "duration": 1175856300,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-28T10:58:03.078Z",
+        "start_timestamp": "2021-12-28T12:13:19.264Z",
         "line": 5,
         "name": "user update only name",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1730634000,
+              "duration": 2198120300,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 650479300,
+              "duration": 981376400,
               "status": "passed"
             },
             "line": 7,

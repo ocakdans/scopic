@@ -25,7 +25,7 @@ public class WSStepDefinitions {
 
 
 
-
+    //Get Request Single User
     @When("user call get single user request")
     public void userCallGetSingleUserRequest() {
         ReqResBaseUrl.baseUrl.pathParams("usersPath" , "users",
@@ -44,6 +44,7 @@ public class WSStepDefinitions {
                 "data.last_name",equalTo("Weaver"))        ;
     }
 
+    //Post Request Single User
     @When("user call post single user request")
     public void userCallPostSingleUserRequest() {
         ReqResBaseUrl.baseUrl.pathParams("usersPath", "users");
@@ -68,6 +69,7 @@ public class WSStepDefinitions {
 
     }
 
+    //Put Request Single User
     @When("user call put single user request")
     public void userCallPutSingleUserRequest() {
         ReqResBaseUrl.baseUrl.pathParams("usersPath", "users",
@@ -91,6 +93,7 @@ public class WSStepDefinitions {
         assertEquals(putReqBody.get("job"), json.getString("job"));
     }
 
+    //Patch Request Single User
     @When("user call patch single user request")
     public void userCallPatchSingleUserRequest() {
         ReqResBaseUrl.baseUrl.pathParams("usersPath", "users",
@@ -102,15 +105,24 @@ public class WSStepDefinitions {
                 spec(ReqResBaseUrl.baseUrl).
                 body(patchReqBody).
                 when().
-                post("{usersPath}/{id}");
+                patch("{usersPath}/{id}");
         response.prettyPrint();
     }
 
     @Then("verifies the patch response with expected data")
     public void verifiesThePatchResponseWithExpectedData() {
         json = response.jsonPath();
-        assertEquals(201, response.getStatusCode());
+        assertEquals(200, response.getStatusCode());
         assertEquals(patchReqBody.get("name"), json.getString("name"));
 
+    }
+
+    //Delete Request Single User
+    @When("user call delete single user request")
+    public void userCallDeleteSingleUserRequest() {
+        ReqResBaseUrl.baseUrl.pathParams("usersPath" , "users",
+                "id", 2) ;
+        response= given().spec(ReqResBaseUrl.baseUrl).when().delete("{usersPath}/{id}");
+        response.prettyPrint();
     }
 }
