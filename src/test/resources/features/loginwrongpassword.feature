@@ -1,4 +1,4 @@
-@failLogin
+@wrongPassword
 Feature: Amazon Fail Login Wrong Password
 
   Scenario Outline: Fail Login via Email

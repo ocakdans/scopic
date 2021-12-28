@@ -72,7 +72,13 @@ public class StepDefinitions {
     @Then("user gets password error")
     public void userGetsPasswordError() {
         String expPassErrorMsg= "Your password is incorrect";
-        assertEquals("password error message doesnt work",expPassErrorMsg,signInPage.passErrorMessage.getText().toString());
+        assertEquals("password error message doesnt work",expPassErrorMsg,signInPage.errorMessage.getText().toString());
     }
 
+    @Then("user gets email error")
+    public void userGetsEmailError() {
+        String expEmailErrorMsg = "We cannot find an account with that email address";
+        assertEquals("email error message doesnt work",expEmailErrorMsg,signInPage.errorMessage.getText().toString());
+
+    }
 }

@@ -27,6 +27,6 @@ public class SignInPage {
     public WebElement notNowLink;
 
     @FindBy(className = "a-list-item")
-    public WebElement passErrorMessage;
+    public WebElement errorMessage;
 
 }

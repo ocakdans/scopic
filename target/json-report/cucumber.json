@@ -3,17 +3,17 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-28T18:06:32.444Z",
-        "line": 17,
-        "name": "Fail Login via Email",
+        "start_timestamp": "2021-12-28T18:16:02.601Z",
+        "line": 14,
+        "name": "Fail Login via Email Wrong Email",
         "description": "",
-        "id": "amazon-fail-login-wrong-password;fail-login-via-email;;2",
+        "id": "amazon-fail-login-wrong-email;fail-login-via-email-wrong-email;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 14481647600,
+              "duration": 9475720600,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 263563400,
+              "duration": 256549300,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 2290517900,
+              "duration": 2695835600,
               "status": "passed"
             },
             "line": 7,
@@ -49,15 +49,15 @@
           },
           {
             "result": {
-              "duration": 112021100,
+              "duration": 112580700,
               "status": "passed"
             },
             "line": 8,
-            "name": "user enters valid \"selim.ocakdan@gmail.com\" address",
+            "name": "user enters valid \"selim.ocakdan333@gmail.com\" address",
             "match": {
               "arguments": [
                 {
-                  "val": "\"selim.ocakdan@gmail.com\"",
+                  "val": "\"selim.ocakdan333@gmail.com\"",
                   "offset": 18
                 }
               ],
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 1257769500,
+              "duration": 948021100,
               "status": "passed"
             },
             "line": 9,
@@ -79,62 +79,32 @@
           },
           {
             "result": {
-              "duration": 88155500,
+              "duration": 31104500,
               "status": "passed"
             },
             "line": 10,
-            "name": "user enters valid \"Aso350000n2\"",
+            "name": "user gets email error",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Aso350000n2\"",
-                  "offset": 18
-                }
-              ],
-              "location": "stepdefinitions.StepDefinitions.userEntersValid(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 85769600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user clicks on second Sign in button",
-            "match": {
-              "location": "stepdefinitions.StepDefinitions.userClicksOnSecondSignInButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 985372300,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user gets password error",
-            "match": {
-              "location": "stepdefinitions.StepDefinitions.userGetsPasswordError()"
+              "location": "stepdefinitions.StepDefinitions.userGetsEmailError()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@failLogin"
+            "name": "@wrongEmail"
           }
         ]
       }
     ],
-    "name": "Amazon Fail Login Wrong Password",
+    "name": "Amazon Fail Login Wrong Email",
     "description": "",
-    "id": "amazon-fail-login-wrong-password",
+    "id": "amazon-fail-login-wrong-email",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/loginfail.feature",
+    "uri": "file:src/test/resources/features/loginwrongemail.feature",
     "tags": [
       {
-        "name": "@failLogin",
+        "name": "@wrongEmail",
         "type": "Tag",
         "location": {
           "line": 1,

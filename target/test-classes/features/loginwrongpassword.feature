@@ -1,4 +1,4 @@
-@failLogin
+@wrongPassword
 Feature: Amazon Fail Login Wrong Password
 
   Scenario Outline: Fail Login via Email
@@ -7,7 +7,7 @@ Feature: Amazon Fail Login Wrong Password
     And user clicks on Sign in button
     And user enters valid "<e-mail>" address
     And user clicks on Continue button
-    And user enters valid "<password>"
+    And user enters "<password>"
     And user clicks on second Sign in button
     #And user clicks on not now link
     Then user gets password error

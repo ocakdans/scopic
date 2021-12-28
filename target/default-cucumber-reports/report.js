@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/loginfail.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/loginwrongemail.feature");
 formatter.feature({
-  "name": "Amazon Fail Login Wrong Password",
+  "name": "Amazon Fail Login Wrong Email",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@failLogin"
+      "name": "@wrongEmail"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Fail Login via Email",
+  "name": "Fail Login via Email Wrong Email",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -35,15 +35,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "user enters valid \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user clicks on second Sign in button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user gets password error",
+  "name": "user gets email error",
   "keyword": "Then "
 });
 formatter.examples({
@@ -53,25 +45,23 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "e-mail",
-        "password"
+        "e-mail"
       ]
     },
     {
       "cells": [
-        "selim.ocakdan@gmail.com",
-        "Aso350000n2"
+        "selim.ocakdan333@gmail.com"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Fail Login via Email",
+  "name": "Fail Login via Email Wrong Email",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@failLogin"
+      "name": "@wrongEmail"
     }
   ]
 });
@@ -106,7 +96,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters valid \"selim.ocakdan@gmail.com\" address",
+  "name": "user enters valid \"selim.ocakdan333@gmail.com\" address",
   "keyword": "And "
 });
 formatter.match({
@@ -126,31 +116,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters valid \"Aso350000n2\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.StepDefinitions.userEntersValid(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on second Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.StepDefinitions.userClicksOnSecondSignInButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user gets password error",
+  "name": "user gets email error",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.StepDefinitions.userGetsPasswordError()"
+  "location": "stepdefinitions.StepDefinitions.userGetsEmailError()"
 });
 formatter.result({
   "status": "passed"

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.031">
-    <testcase classname="Amazon Fail Login Wrong Password" name="Fail Login via Email" time="19.629">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.029">
+    <testcase classname="Amazon Fail Login Wrong Email" name="Fail Login via Email Wrong Email" time="13.595">
         <system-out>
             <![CDATA[When user is on the amazon homepage.........................................passed
 And user hover over account&lists...........................................passed
 And user clicks on Sign in button...........................................passed
-And user enters valid "selim.ocakdan@gmail.com" address.....................passed
+And user enters valid "selim.ocakdan333@gmail.com" address..................passed
 And user clicks on Continue button..........................................passed
-And user enters valid "Aso350000n2".........................................passed
-And user clicks on second Sign in button....................................passed
-Then user gets password error...............................................passed
+Then user gets email error..................................................passed
 ]]>
         </system-out>
     </testcase>
