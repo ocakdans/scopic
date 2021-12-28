@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/amazonlogin.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/loginfail.feature");
 formatter.feature({
-  "name": "Amazon Success Login",
+  "name": "Amazon Fail Login Wrong Password",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@amazonLogin"
+      "name": "@failLogin"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Success Login via Email",
+  "name": "Fail Login via Email",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -43,7 +43,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "user verifies name",
+  "name": "user gets password error",
   "keyword": "Then "
 });
 formatter.examples({
@@ -60,18 +60,18 @@ formatter.examples({
     {
       "cells": [
         "selim.ocakdan@gmail.com",
-        "Aso350000n"
+        "Aso350000n2"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Success Login via Email",
+  "name": "Fail Login via Email",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@amazonLogin"
+      "name": "@failLogin"
     }
   ]
 });
@@ -126,7 +126,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters valid \"Aso350000n\"",
+  "name": "user enters valid \"Aso350000n2\"",
   "keyword": "And "
 });
 formatter.match({
@@ -146,11 +146,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user verifies name",
+  "name": "user gets password error",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.StepDefinitions.userVerifiesName()"
+  "location": "stepdefinitions.StepDefinitions.userGetsPasswordError()"
 });
 formatter.result({
   "status": "passed"

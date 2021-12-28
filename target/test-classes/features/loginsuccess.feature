@@ -1,4 +1,4 @@
-@amazonLogin
+@successLogin
 Feature: Amazon Success Login
 
   Scenario Outline: Success Login via Email

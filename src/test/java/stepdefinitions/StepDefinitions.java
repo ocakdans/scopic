@@ -3,13 +3,14 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import pages.AfterLoginPage;
 import pages.HomePage;
 import pages.SignInPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+import static org.junit.Assert.assertEquals;
 
 public class StepDefinitions {
     HomePage homePage = new HomePage();
@@ -44,8 +45,8 @@ public class StepDefinitions {
     }
 
 
-    @And("user enters valid {string}")
-    public void userEntersValid(String arg0) {
+    @And("user enters {string}")
+    public void userEnters(String arg0) {
         signInPage.password.sendKeys(arg0);
     }
 
@@ -62,13 +63,16 @@ public class StepDefinitions {
 
     @Then("user verifies name")
     public void userVerifiesName() {
-        String actualName = "Hello, Selim";
-        Assert.assertEquals("Not equal", actualName, afterLoginPage.userName.getText().toString()) ;
+        String expName = "Hello, Selim";
+        assertEquals("Not equal", expName, afterLoginPage.userName.getText().toString()) ;
 
     }
 
 
-
-
+    @Then("user gets password error")
+    public void userGetsPasswordError() {
+        String expPassErrorMsg= "Your password is incorrect";
+        assertEquals("password error message doesnt work",expPassErrorMsg,signInPage.passErrorMessage.getText().toString());
+    }
 
 }

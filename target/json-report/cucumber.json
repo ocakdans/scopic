@@ -3,17 +3,17 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-28T12:26:57.910Z",
+        "start_timestamp": "2021-12-28T18:06:32.444Z",
         "line": 17,
-        "name": "Success Login via Email",
+        "name": "Fail Login via Email",
         "description": "",
-        "id": "amazon-success-login;success-login-via-email;;2",
+        "id": "amazon-fail-login-wrong-password;fail-login-via-email;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 23323342200,
+              "duration": 14481647600,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 204252600,
+              "duration": 263563400,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 1446721300,
+              "duration": 2290517900,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 185296500,
+              "duration": 112021100,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 1186262100,
+              "duration": 1257769500,
               "status": "passed"
             },
             "line": 9,
@@ -79,15 +79,15 @@
           },
           {
             "result": {
-              "duration": 96546800,
+              "duration": 88155500,
               "status": "passed"
             },
             "line": 10,
-            "name": "user enters valid \"Aso350000n\"",
+            "name": "user enters valid \"Aso350000n2\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Aso350000n\"",
+                  "val": "\"Aso350000n2\"",
                   "offset": 18
                 }
               ],
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 83158300,
+              "duration": 85769600,
               "status": "passed"
             },
             "line": 11,
@@ -109,32 +109,32 @@
           },
           {
             "result": {
-              "duration": 6746360000,
+              "duration": 985372300,
               "status": "passed"
             },
             "line": 13,
-            "name": "user verifies name",
+            "name": "user gets password error",
             "match": {
-              "location": "stepdefinitions.StepDefinitions.userVerifiesName()"
+              "location": "stepdefinitions.StepDefinitions.userGetsPasswordError()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@amazonLogin"
+            "name": "@failLogin"
           }
         ]
       }
     ],
-    "name": "Amazon Success Login",
+    "name": "Amazon Fail Login Wrong Password",
     "description": "",
-    "id": "amazon-success-login",
+    "id": "amazon-fail-login-wrong-password",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/amazonlogin.feature",
+    "uri": "file:src/test/resources/features/loginfail.feature",
     "tags": [
       {
-        "name": "@amazonLogin",
+        "name": "@failLogin",
         "type": "Tag",
         "location": {
           "line": 1,

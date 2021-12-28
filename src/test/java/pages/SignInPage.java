@@ -26,4 +26,7 @@ public class SignInPage {
     @FindBy(id = "ap-account-fixup-phone-skip-link")
     public WebElement notNowLink;
 
+    @FindBy(className = "a-list-item")
+    public WebElement passErrorMessage;
+
 }

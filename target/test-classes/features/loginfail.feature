@@ -1,7 +1,7 @@
-@amazonLogin
-Feature: Amazon Success Login
+@failLogin
+Feature: Amazon Fail Login Wrong Password
 
-  Scenario Outline: Success Login via Email
+  Scenario Outline: Fail Login via Email
     When user is on the amazon homepage
     And user hover over account&lists
     And user clicks on Sign in button
@@ -10,11 +10,11 @@ Feature: Amazon Success Login
     And user enters valid "<password>"
     And user clicks on second Sign in button
     #And user clicks on not now link
-    Then user verifies name
+    Then user gets password error
 
     Examples:
       | e-mail                  | password   |
-      | selim.ocakdan@gmail.com | Aso350000n |
+      | selim.ocakdan@gmail.com | Aso350000n2 |
 
 
 
