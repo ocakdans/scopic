@@ -130,4 +130,5 @@ public class WSStepDefinitions {
     public void userClosesTheDriver() {
         Driver.closeDriver();
     }
+
 }

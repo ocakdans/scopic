@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faa5fad3-b5c0-4ccb-a22e-26f34ebb7842" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ABCStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/UIStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/WSStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/WSStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/getsingleuser.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/abc.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/reqresgetsingleuser_imp.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/loginsuccess.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/loginsuccess.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/loginwrongpassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/loginwrongpassword.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/json-report/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-report/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/getsingleuser.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/StepDefinitions.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,29 +98,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="171" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1640597847084" />
-    <state width="1877" height="247" key="GridCell.Tab.0.bottom" timestamp="1641026812344">
+    <state width="1877" height="247" key="GridCell.Tab.0.bottom" timestamp="1641031821590">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="358" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1640667596220" />
-    <state width="1877" height="247" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641026812344" />
+    <state width="1877" height="247" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641031821590" />
     <state width="1493" height="184" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1640851025003" />
-    <state width="1877" height="247" key="GridCell.Tab.0.center" timestamp="1641026812344">
+    <state width="1877" height="247" key="GridCell.Tab.0.center" timestamp="1641031821590">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="358" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1640667596219" />
-    <state width="1877" height="247" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641026812344" />
+    <state width="1877" height="247" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641031821590" />
     <state width="1493" height="184" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1640851025003" />
-    <state width="1877" height="247" key="GridCell.Tab.0.left" timestamp="1641026812344">
+    <state width="1877" height="247" key="GridCell.Tab.0.left" timestamp="1641031821589">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="358" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1640667596219" />
-    <state width="1877" height="247" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641026812344" />
+    <state width="1877" height="247" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641031821589" />
     <state width="1493" height="184" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1640851025003" />
-    <state width="1877" height="247" key="GridCell.Tab.0.right" timestamp="1641026812344">
+    <state width="1877" height="247" key="GridCell.Tab.0.right" timestamp="1641031821590">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="358" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1640667596220" />
-    <state width="1877" height="247" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641026812344" />
+    <state width="1877" height="247" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641031821590" />
     <state width="1493" height="184" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1640851025003" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1640755410357">
       <screen x="1920" y="0" width="1920" height="1040" />

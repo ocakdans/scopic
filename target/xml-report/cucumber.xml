@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="22.233">
-    <testcase classname="Amazon Success Login" name="Success Login via Email" time="11.366">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="27.092">
+    <testcase classname="Amazon Success Login" name="Success Login via Email" time="12.147">
         <system-out>
             <![CDATA[When user is on the amazon homepage.........................................passed
 And user hover over account&lists...........................................passed
@@ -14,7 +14,7 @@ Then user closes the driver.................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Amazon Success Login" name="Success Login via Email 2" time="10.416">
+    <testcase classname="Amazon Success Login" name="Success Login via Email 2" time="14.512">
         <system-out>
             <![CDATA[When user is on the amazon homepage.........................................passed
 And user hover over account&lists...........................................passed

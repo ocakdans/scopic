@@ -14,9 +14,9 @@ Feature: Amazon Success Login
     Then user closes the driver
 
     Examples:
-      | e-mail                  | password   |
-      | selim.ocakdan@gmail.com | Aso350000n |
-      | ocakdan.selim52@gmail.com | 521453 |
+      | e-mail                    | password   |
+      | selim.ocakdan@gmail.com   | Aso350000n |
+      | ocakdan.selim52@gmail.com | 521453     |
 
 
 

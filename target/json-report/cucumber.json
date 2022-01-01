@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-01-01T08:46:53.646Z",
+        "start_timestamp": "2022-01-01T09:06:10.822Z",
         "line": 18,
         "name": "Success Login via Email",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5721234400,
+              "duration": 5574609100,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 239312800,
+              "duration": 255430400,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 1131920700,
+              "duration": 1306129900,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 95560200,
+              "duration": 127667400,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 936472700,
+              "duration": 1098233700,
               "status": "passed"
             },
             "line": 9,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 54844000,
+              "duration": 74341700,
               "status": "passed"
             },
             "line": 10,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 111249800,
+              "duration": 96493900,
               "status": "passed"
             },
             "line": 11,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 2233207400,
+              "duration": 2831075400,
               "status": "passed"
             },
             "line": 13,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 776064900,
+              "duration": 716889600,
               "status": "passed"
             },
             "line": 14,
@@ -139,7 +139,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-01T08:47:05.042Z",
+        "start_timestamp": "2022-01-01T09:06:22.993Z",
         "line": 19,
         "name": "Success Login via Email",
         "description": "",
@@ -149,7 +149,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4281261400,
+              "duration": 8742493100,
               "status": "passed"
             },
             "line": 5,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 255416200,
+              "duration": 283751200,
               "status": "passed"
             },
             "line": 6,
@@ -173,7 +173,7 @@
           },
           {
             "result": {
-              "duration": 1010951200,
+              "duration": 1201301600,
               "status": "passed"
             },
             "line": 7,
@@ -185,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 98915500,
+              "duration": 99734000,
               "status": "passed"
             },
             "line": 8,
@@ -203,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 1419871400,
+              "duration": 1147390700,
               "status": "passed"
             },
             "line": 9,
@@ -215,7 +215,7 @@
           },
           {
             "result": {
-              "duration": 68130500,
+              "duration": 50001400,
               "status": "passed"
             },
             "line": 10,
@@ -233,7 +233,7 @@
           },
           {
             "result": {
-              "duration": 88196600,
+              "duration": 73057800,
               "status": "passed"
             },
             "line": 11,
@@ -245,7 +245,7 @@
           },
           {
             "result": {
-              "duration": 2469880800,
+              "duration": 2201622700,
               "status": "passed"
             },
             "line": 13,
@@ -257,7 +257,7 @@
           },
           {
             "result": {
-              "duration": 720911900,
+              "duration": 707745300,
               "status": "passed"
             },
             "line": 14,

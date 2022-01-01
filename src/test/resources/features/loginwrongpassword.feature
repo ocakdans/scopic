@@ -13,8 +13,8 @@ Feature: Amazon Fail Login Wrong Password
     Then user gets password error
 
     Examples:
-      | e-mail                  | password   |
-      | selim.ocakdan@gmail.com | 12345 |
+      | e-mail                  | password    |
+      | selim.ocakdan@gmail.com | Aso350000n2 |
 
 
 
