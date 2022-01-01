@@ -14,7 +14,7 @@ Feature: Amazon Fail Login Wrong Password
 
     Examples:
       | e-mail                  | password   |
-      | selim.ocakdan@gmail.com | Aso350000n2 |
+      | selim.ocakdan@gmail.com | 12345 |
 
 
 

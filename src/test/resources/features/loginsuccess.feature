@@ -11,10 +11,12 @@ Feature: Amazon Success Login
     And user clicks on second Sign in button
     #And user clicks on not now link
     Then user verifies name
+    Then user closes the driver
 
     Examples:
       | e-mail                  | password   |
       | selim.ocakdan@gmail.com | Aso350000n |
+      | ocakdan.selim52@gmail.com | 521453 |
 
 
 

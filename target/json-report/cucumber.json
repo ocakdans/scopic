@@ -3,108 +3,286 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-28T18:16:02.601Z",
-        "line": 14,
-        "name": "Fail Login via Email Wrong Email",
+        "start_timestamp": "2022-01-01T08:46:53.646Z",
+        "line": 18,
+        "name": "Success Login via Email",
         "description": "",
-        "id": "amazon-fail-login-wrong-email;fail-login-via-email-wrong-email;;2",
+        "id": "amazon-success-login;success-login-via-email;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9475720600,
+              "duration": 5721234400,
               "status": "passed"
             },
             "line": 5,
             "name": "user is on the amazon homepage",
             "match": {
-              "location": "stepdefinitions.StepDefinitions.user_is_on_the_amazon_homepage()"
+              "location": "stepdefinitions.UIStepDefinitions.user_is_on_the_amazon_homepage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 256549300,
+              "duration": 239312800,
               "status": "passed"
             },
             "line": 6,
             "name": "user hover over account\u0026lists",
             "match": {
-              "location": "stepdefinitions.StepDefinitions.userHoverOverAccountLists()"
+              "location": "stepdefinitions.UIStepDefinitions.userHoverOverAccountLists()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2695835600,
+              "duration": 1131920700,
               "status": "passed"
             },
             "line": 7,
             "name": "user clicks on Sign in button",
             "match": {
-              "location": "stepdefinitions.StepDefinitions.userClicksOnSignInButton()"
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnSignInButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 112580700,
+              "duration": 95560200,
               "status": "passed"
             },
             "line": 8,
-            "name": "user enters valid \"selim.ocakdan333@gmail.com\" address",
+            "name": "user enters valid \"selim.ocakdan@gmail.com\" address",
             "match": {
               "arguments": [
                 {
-                  "val": "\"selim.ocakdan333@gmail.com\"",
+                  "val": "\"selim.ocakdan@gmail.com\"",
                   "offset": 18
                 }
               ],
-              "location": "stepdefinitions.StepDefinitions.userEntersValidAddress(java.lang.String)"
+              "location": "stepdefinitions.UIStepDefinitions.userEntersValidAddress(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 948021100,
+              "duration": 936472700,
               "status": "passed"
             },
             "line": 9,
             "name": "user clicks on Continue button",
             "match": {
-              "location": "stepdefinitions.StepDefinitions.userClicksOnContinueButton()"
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnContinueButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 31104500,
+              "duration": 54844000,
               "status": "passed"
             },
             "line": 10,
-            "name": "user gets email error",
+            "name": "user enters \"Aso350000n\"",
             "match": {
-              "location": "stepdefinitions.StepDefinitions.userGetsEmailError()"
+              "arguments": [
+                {
+                  "val": "\"Aso350000n\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.UIStepDefinitions.userEnters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111249800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on second Sign in button",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnSecondSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2233207400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user verifies name",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userVerifiesName()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 776064900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user closes the driver",
+            "match": {
+              "location": "stepdefinitions.WSStepDefinitions.userClosesTheDriver()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wrongEmail"
+            "name": "@successLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-01T08:47:05.042Z",
+        "line": 19,
+        "name": "Success Login via Email",
+        "description": "",
+        "id": "amazon-success-login;success-login-via-email;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4281261400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the amazon homepage",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.user_is_on_the_amazon_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 255416200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user hover over account\u0026lists",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userHoverOverAccountLists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1010951200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98915500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters valid \"ocakdan.selim52@gmail.com\" address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ocakdan.selim52@gmail.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.UIStepDefinitions.userEntersValidAddress(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1419871400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Continue button",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68130500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters \"521453\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"521453\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.UIStepDefinitions.userEnters(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88196600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on second Sign in button",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnSecondSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2469880800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user verifies name",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userVerifiesName()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 720911900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user closes the driver",
+            "match": {
+              "location": "stepdefinitions.WSStepDefinitions.userClosesTheDriver()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@successLogin"
           }
         ]
       }
     ],
-    "name": "Amazon Fail Login Wrong Email",
+    "name": "Amazon Success Login",
     "description": "",
-    "id": "amazon-fail-login-wrong-email",
+    "id": "amazon-success-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/loginwrongemail.feature",
+    "uri": "file:src/test/resources/features/loginsuccess.feature",
     "tags": [
       {
-        "name": "@wrongEmail",
+        "name": "@successLogin",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -12,7 +12,7 @@ import utilities.ReusableMethods;
 
 import static org.junit.Assert.assertEquals;
 
-public class StepDefinitions {
+public class UIStepDefinitions {
     HomePage homePage = new HomePage();
     SignInPage signInPage = new SignInPage();
     AfterLoginPage afterLoginPage = new AfterLoginPage();

@@ -7,6 +7,7 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import testdata.TestData;
+import utilities.Driver;
 
 import java.util.Map;
 
@@ -123,5 +124,10 @@ public class WSStepDefinitions {
                 "id", 2);
         response = given().spec(ReqResBaseUrl.baseUrl).when().delete("{usersPath}/{id}");
         response.prettyPrint();
+    }
+
+    @Then("user closes the driver")
+    public void userClosesTheDriver() {
+        Driver.closeDriver();
     }
 }

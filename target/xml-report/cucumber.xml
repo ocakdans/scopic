@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.029">
-    <testcase classname="Amazon Fail Login Wrong Email" name="Fail Login via Email Wrong Email" time="13.595">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="22.233">
+    <testcase classname="Amazon Success Login" name="Success Login via Email" time="11.366">
         <system-out>
             <![CDATA[When user is on the amazon homepage.........................................passed
 And user hover over account&lists...........................................passed
 And user clicks on Sign in button...........................................passed
-And user enters valid "selim.ocakdan333@gmail.com" address..................passed
+And user enters valid "selim.ocakdan@gmail.com" address.....................passed
 And user clicks on Continue button..........................................passed
-Then user gets email error..................................................passed
+And user enters "Aso350000n"................................................passed
+And user clicks on second Sign in button....................................passed
+Then user verifies name.....................................................passed
+Then user closes the driver.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Amazon Success Login" name="Success Login via Email 2" time="10.416">
+        <system-out>
+            <![CDATA[When user is on the amazon homepage.........................................passed
+And user hover over account&lists...........................................passed
+And user clicks on Sign in button...........................................passed
+And user enters valid "ocakdan.selim52@gmail.com" address...................passed
+And user clicks on Continue button..........................................passed
+And user enters "521453"....................................................passed
+And user clicks on second Sign in button....................................passed
+Then user verifies name.....................................................passed
+Then user closes the driver.................................................passed
 ]]>
         </system-out>
     </testcase>
