@@ -1,7 +1,7 @@
-@successLogin
-Feature: Amazon Success Login
+@end2end
+Feature: Add to Cart process
 
-  Scenario Outline: Success Login via Email
+  Scenario Outline: Add to Cart Success
     When user is on the amazon homepage
     And user hover over account&lists
     And user clicks on Sign in button
@@ -9,14 +9,13 @@ Feature: Amazon Success Login
     And user clicks on Continue button
     And user enters "<password>"
     And user clicks on second Sign in button
-    #And user clicks on not now link
     Then user verifies name
-    Then user closes the driver
+    Then user searches for "toys" from searchbox
+    And user selects any of the products
+    And user clicks on add to cart button
+    And user verifies the product is added to cart
+    #Then user closes the driver
 
     Examples:
       | e-mail                    | password   |
       | selim.ocakdan@gmail.com   | Aso350000n |
-      | ocakdan.selim52@gmail.com | 521453     |
-
-
-

@@ -3,12 +3,15 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Keys;
 import pages.AfterLoginPage;
 import pages.HomePage;
 import pages.SignInPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+import java.util.concurrent.ThreadLocalRandom;
 
 import static org.junit.Assert.assertEquals;
 
@@ -80,5 +83,31 @@ public class UIStepDefinitions {
         String expEmailErrorMsg = "We cannot find an account with that email address";
         assertEquals("email error message doesnt work",expEmailErrorMsg,signInPage.errorMessage.getText().toString());
 
+    }
+
+    @Then("user searches for {string} from searchbox")
+    public void userSearchesForFromSearchbox(String products) {
+        afterLoginPage.searchBox.sendKeys(products + Keys.ENTER);
+    }
+
+    @And("user selects any of the products")
+    public void userSelectsAnyOfTheProducts() {
+        int minIndexOfProducts = 0;
+        int maxIndexOfProducts = afterLoginPage.randomProduct.size();;
+        int randomNum = ThreadLocalRandom.current().nextInt(minIndexOfProducts, maxIndexOfProducts-1);
+        System.out.println(randomNum);
+        afterLoginPage.randomProduct.get(randomNum).click();
+    }
+
+    @And("user clicks on add to cart button")
+    public void userClicksOnAddToCartButton() {
+        afterLoginPage.addToCart.click();
+    }
+
+    @And("user verifies the product is added to cart")
+    public void userVerifiesTheProductIsAddedToCart() {
+        String expAddedToCart = "Added to Cart";
+        String addedToCartActual = afterLoginPage.addedToCartText.getText();
+        assertEquals("couldnt add the product to the cart" , expAddedToCart,addedToCartActual);
     }
 }

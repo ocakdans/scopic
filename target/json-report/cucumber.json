@@ -3,17 +3,17 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-01-01T09:06:10.822Z",
-        "line": 18,
-        "name": "Success Login via Email",
+        "start_timestamp": "2022-01-04T21:12:58.645Z",
+        "line": 21,
+        "name": "Add to Cart Success",
         "description": "",
-        "id": "amazon-success-login;success-login-via-email;;2",
+        "id": "add-to-cart-process;add-to-cart-success;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5574609100,
+              "duration": 5814852800,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 255430400,
+              "duration": 196462200,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 1306129900,
+              "duration": 1058768300,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 127667400,
+              "duration": 106792000,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 1098233700,
+              "duration": 880650900,
               "status": "passed"
             },
             "line": 9,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 74341700,
+              "duration": 71378500,
               "status": "passed"
             },
             "line": 10,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 96493900,
+              "duration": 99486500,
               "status": "passed"
             },
             "line": 11,
@@ -109,10 +109,10 @@
           },
           {
             "result": {
-              "duration": 2831075400,
+              "duration": 1866377700,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "user verifies name",
             "match": {
               "location": "stepdefinitions.UIStepDefinitions.userVerifiesName()"
@@ -121,168 +121,74 @@
           },
           {
             "result": {
-              "duration": 716889600,
+              "duration": 2791450500,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user closes the driver",
-            "match": {
-              "location": "stepdefinitions.WSStepDefinitions.userClosesTheDriver()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@successLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-01T09:06:22.993Z",
-        "line": 19,
-        "name": "Success Login via Email",
-        "description": "",
-        "id": "amazon-success-login;success-login-via-email;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 8742493100,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the amazon homepage",
-            "match": {
-              "location": "stepdefinitions.UIStepDefinitions.user_is_on_the_amazon_homepage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 283751200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user hover over account\u0026lists",
-            "match": {
-              "location": "stepdefinitions.UIStepDefinitions.userHoverOverAccountLists()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1201301600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks on Sign in button",
-            "match": {
-              "location": "stepdefinitions.UIStepDefinitions.userClicksOnSignInButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 99734000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user enters valid \"ocakdan.selim52@gmail.com\" address",
+            "line": 13,
+            "name": "user searches for \"toys\" from searchbox",
             "match": {
               "arguments": [
                 {
-                  "val": "\"ocakdan.selim52@gmail.com\"",
+                  "val": "\"toys\"",
                   "offset": 18
                 }
               ],
-              "location": "stepdefinitions.UIStepDefinitions.userEntersValidAddress(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1147390700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user clicks on Continue button",
-            "match": {
-              "location": "stepdefinitions.UIStepDefinitions.userClicksOnContinueButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50001400,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user enters \"521453\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"521453\"",
-                  "offset": 12
-                }
-              ],
-              "location": "stepdefinitions.UIStepDefinitions.userEnters(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 73057800,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user clicks on second Sign in button",
-            "match": {
-              "location": "stepdefinitions.UIStepDefinitions.userClicksOnSecondSignInButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2201622700,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user verifies name",
-            "match": {
-              "location": "stepdefinitions.UIStepDefinitions.userVerifiesName()"
+              "location": "stepdefinitions.UIStepDefinitions.userSearchesForFromSearchbox(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 707745300,
+              "duration": 5389881600,
               "status": "passed"
             },
             "line": 14,
-            "name": "user closes the driver",
+            "name": "user selects any of the products",
             "match": {
-              "location": "stepdefinitions.WSStepDefinitions.userClosesTheDriver()"
+              "location": "stepdefinitions.UIStepDefinitions.userSelectsAnyOfTheProducts()"
             },
-            "keyword": "Then "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4606164600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks on add to cart button",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnAddToCartButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62892200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user verifies the product is added to cart",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userVerifiesTheProductIsAddedToCart()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@successLogin"
+            "name": "@end2end"
           }
         ]
       }
     ],
-    "name": "Amazon Success Login",
+    "name": "Add to Cart process",
     "description": "",
-    "id": "amazon-success-login",
+    "id": "add-to-cart-process",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/loginsuccess.feature",
+    "uri": "file:src/test/resources/features/end2end.feature",
     "tags": [
       {
-        "name": "@successLogin",
+        "name": "@end2end",
         "type": "Tag",
         "location": {
           "line": 1,
