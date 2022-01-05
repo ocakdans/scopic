@@ -9,6 +9,7 @@ import io.restassured.response.Response;
 import testdata.TestData;
 import utilities.Driver;
 
+import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
@@ -151,6 +152,18 @@ public class WSStepDefinitions {
 
 
     }
+
+
+    @Then("verifies the data for that user")
+    public void verifies_the_data_for_that_user(List<List<String>> dataTable) {
+        JsonPath json = response.jsonPath();
+        assertEquals(200, response.getStatusCode());
+        for (int i = 0; i < dataTable.size(); i++) {
+            assertEquals(dataTable.get(i).get(1), json.getString(dataTable.get(i).get(0)));
+
+        }
+    }
+
 
 
 

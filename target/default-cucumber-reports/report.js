@@ -1,214 +1,74 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/end2end.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/reqresgetsingleuser_imp.feature");
 formatter.feature({
-  "name": "Add to Cart process",
+  "name": "Get single user",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@end2end"
+      "name": "@getSingleUser"
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "Add to Cart Success",
+formatter.background({
+  "name": "user calls the base url",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Background"
 });
 formatter.step({
-  "name": "user is on the amazon homepage",
-  "keyword": "When "
+  "name": "user calls the base url",
+  "keyword": "Given "
 });
-formatter.step({
-  "name": "user hover over account\u0026lists",
-  "keyword": "And "
+formatter.match({
+  "location": "stepdefinitions.ReqResBaseUrl.userCallsTheBaseUrl()"
 });
-formatter.step({
-  "name": "user clicks on Sign in button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enters valid \"\u003ce-mail\u003e\" address",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user clicks on Continue button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user enters \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user clicks on second Sign in button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user verifies name",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user searches for \"toys\" from searchbox",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "user selects any of the products",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user clicks on add to cart button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "user verifies the product is added to cart",
-  "keyword": "And "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "e-mail",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "selim.ocakdan@gmail.com",
-        "Aso350000n"
-      ]
-    }
-  ]
+formatter.result({
+  "status": "skipped"
 });
 formatter.scenario({
-  "name": "Add to Cart Success",
+  "name": "Get single user success",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@end2end"
+      "name": "@getSingleUser"
+    },
+    {
+      "name": "@getSingleUser_imp2"
     }
   ]
 });
 formatter.step({
-  "name": "user is on the amazon homepage",
+  "name": "user call the endpoint with \"usersPath\" for parameters \"users\" and \"id\" for \"2\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.user_is_on_the_amazon_homepage()"
+  "location": "stepdefinitions.WSStepDefinitions.userCallTheEndpointWithForPathParametersAndFor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user hover over account\u0026lists",
+  "name": "user gets the single user response with path parameters \"usersPath\" and \"id\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userHoverOverAccountLists()"
+  "location": "stepdefinitions.WSStepDefinitions.user_gets_the_single_user_response_with_path_parameters_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user clicks on Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userClicksOnSignInButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters valid \"selim.ocakdan@gmail.com\" address",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userEntersValidAddress(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on Continue button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userClicksOnContinueButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters \"Aso350000n\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userEnters(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on second Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userClicksOnSecondSignInButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies name",
+  "name": "verifies the data for that user",
+  "rows": [
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userVerifiesName()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user searches for \"toys\" from searchbox",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userSearchesForFromSearchbox(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user selects any of the products",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userSelectsAnyOfTheProducts()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on add to cart button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userClicksOnAddToCartButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies the product is added to cart",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.UIStepDefinitions.userVerifiesTheProductIsAddedToCart()"
-});
-formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 });

@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.598">
-    <testcase classname="Add to Cart process" name="Add to Cart Success" time="23.074">
-        <system-out>
-            <![CDATA[When user is on the amazon homepage.........................................passed
-And user hover over account&lists...........................................passed
-And user clicks on Sign in button...........................................passed
-And user enters valid "selim.ocakdan@gmail.com" address.....................passed
-And user clicks on Continue button..........................................passed
-And user enters "Aso350000n"................................................passed
-And user clicks on second Sign in button....................................passed
-Then user verifies name.....................................................passed
-Then user searches for "toys" from searchbox................................passed
-And user selects any of the products........................................passed
-And user clicks on add to cart button.......................................passed
-And user verifies the product is added to cart..............................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.764">
+    <testcase classname="Get single user" name="Get single user success" time="0.073">
+        <skipped>
+            <![CDATA[Given user calls the base url...............................................skipped
+When user call the endpoint with "usersPath" for parameters "users" and "id" for "2".skipped
+And user gets the single user response with path parameters "usersPath" and "id".skipped
+Then verifies the data for that user........................................undefined
 ]]>
-        </system-out>
+        </skipped>
     </testcase>
 </testsuite>

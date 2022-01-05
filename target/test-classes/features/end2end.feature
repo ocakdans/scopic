@@ -14,7 +14,7 @@ Feature: Add to Cart process
     And user selects any of the products
     And user clicks on add to cart button
     And user verifies the product is added to cart
-    #Then user closes the driver
+    Then user closes the driver
 
     Examples:
       | e-mail                    | password   |
