@@ -15,8 +15,6 @@ Feature: Get single user
   @getSingleUser_imp2
   Scenario: Get single user success
     When user call the endpoint with "usersPath" for parameters "users" and "id" for "2"
-    #When user call get single user request for path parameter name "usersPath" , path parameter is "users" and path parameter name "id" , path parameter is "2"
-    #And user gets the single user response path parameter name "usersPath" , path parameter is "id"
     And user gets the single user response with path parameters "usersPath" and "id"
     Then verifies the data for that user
       | data.first_name | Janet                  |
