@@ -7,7 +7,6 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import testdata.TestData;
-import utilities.Driver;
 
 import java.util.List;
 import java.util.Map;
@@ -126,10 +125,7 @@ public class WSStepDefinitions {
         response.prettyPrint();
     }
 
-    @Then("user closes the driver")
-    public void userClosesTheDriver() {
-        Driver.closeDriver();
-    }
+
 
 
     @When("user call the endpoint with {string} for parameters {string} and {string} for {string}")

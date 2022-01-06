@@ -104,6 +104,11 @@ public class UIStepDefinitions {
         afterLoginPage.addToCart.click();
     }
 
+    @Then("user closes the driver")
+    public void userClosesTheDriver() {
+        Driver.closeDriver();
+    }
+
     @And("user verifies the product is added to cart")
     public void userVerifiesTheProductIsAddedToCart() {
         String expAddedToCart = "Added to Cart";
