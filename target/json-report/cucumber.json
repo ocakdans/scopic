@@ -3,141 +3,108 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "user calls the base url",
+        "start_timestamp": "2022-01-19T19:57:10.732Z",
+        "line": 14,
+        "name": "Fail Login via Email Wrong Email",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1994800,
-              "status": "skipped"
-            },
-            "line": 4,
-            "name": "user calls the base url",
-            "match": {
-              "location": "stepdefinitions.ReqResBaseUrl.userCallsTheBaseUrl()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-05T18:03:48.307Z",
-        "line": 15,
-        "name": "Get single user success",
-        "description": "",
-        "id": "get-single-user;get-single-user-success",
+        "id": "amazon-fail-login-wrong-email;fail-login-via-email-wrong-email;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1169000,
-              "status": "skipped"
+              "duration": 9720583800,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "user call the endpoint with \"usersPath\" for parameters \"users\" and \"id\" for \"2\"",
+            "line": 5,
+            "name": "user is on the amazon homepage",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"usersPath\"",
-                  "offset": 28
-                },
-                {
-                  "val": "\"users\"",
-                  "offset": 55
-                },
-                {
-                  "val": "\"id\"",
-                  "offset": 67
-                },
-                {
-                  "val": "\"2\"",
-                  "offset": 76
-                }
-              ],
-              "location": "stepdefinitions.WSStepDefinitions.userCallTheEndpointWithForPathParametersAndFor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.UIStepDefinitions.user_is_on_the_amazon_homepage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 997500,
-              "status": "skipped"
+              "duration": 286063000,
+              "status": "passed"
             },
-            "line": 19,
-            "name": "user gets the single user response with path parameters \"usersPath\" and \"id\"",
+            "line": 6,
+            "name": "user hover over account\u0026lists",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"usersPath\"",
-                  "offset": 56
-                },
-                {
-                  "val": "\"id\"",
-                  "offset": 72
-                }
-              ],
-              "location": "stepdefinitions.WSStepDefinitions.user_gets_the_single_user_response_with_path_parameters_and(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.UIStepDefinitions.userHoverOverAccountLists()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3335000300,
+              "status": "passed"
             },
-            "line": 20,
-            "name": "verifies the data for that user",
-            "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "data.first_name",
-                  "Janet"
-                ]
-              },
-              {
-                "cells": [
-                  "data.last_name",
-                  "Weaver"
-                ]
-              },
-              {
-                "cells": [
-                  "data.id",
-                  "2"
-                ]
-              },
-              {
-                "cells": [
-                  "data.email",
-                  "janet.weaver@reqres.in"
-                ]
-              }
-            ],
+            "line": 7,
+            "name": "user clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171453000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters valid \"selim.ocakdan333@gmail.com\" address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"selim.ocakdan333@gmail.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.UIStepDefinitions.userEntersValidAddress(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1029869800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Continue button",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userClicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50277900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user gets email error",
+            "match": {
+              "location": "stepdefinitions.UIStepDefinitions.userGetsEmailError()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@getSingleUser"
-          },
-          {
-            "name": "@getSingleUser_imp2"
+            "name": "@wrongEmail"
           }
         ]
       }
     ],
-    "name": "Get single user",
+    "name": "Amazon Fail Login Wrong Email",
     "description": "",
-    "id": "get-single-user",
+    "id": "amazon-fail-login-wrong-email",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/reqresgetsingleuser_imp.feature",
+    "uri": "file:src/test/resources/features/loginwrongemail.feature",
     "tags": [
       {
-        "name": "@getSingleUser",
+        "name": "@wrongEmail",
         "type": "Tag",
         "location": {
           "line": 1,

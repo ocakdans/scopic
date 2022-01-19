@@ -15,7 +15,7 @@ Feature: Amazon Success Login
 
     Examples:
       | e-mail                    | password   |
-      | selim.ocakdan@gmail.com   | Aso350000n |
+      | selim.ocakdan@gmail.com   | Aso350000n2 |
       | ocakdan.selim52@gmail.com | 521453     |
 
 

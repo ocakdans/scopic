@@ -19,8 +19,8 @@ import org.junit.runner.RunWith;
         //Path of step definitions
         glue = "stepdefinitions" ,
         //tags = "@cryspositive or @crysnegative",
-        tags = "@getSingleUser_imp2",
-        dryRun = true
+        tags = "@wrongEmail",
+        dryRun = false
 
 
 )

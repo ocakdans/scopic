@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="1" time="0.764">
-    <testcase classname="Get single user" name="Get single user success" time="0.073">
-        <skipped>
-            <![CDATA[Given user calls the base url...............................................skipped
-When user call the endpoint with "usersPath" for parameters "users" and "id" for "2".skipped
-And user gets the single user response with path parameters "usersPath" and "id".skipped
-Then verifies the data for that user........................................undefined
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.26">
+    <testcase classname="Amazon Fail Login Wrong Email" name="Fail Login via Email Wrong Email" time="14.675">
+        <system-out>
+            <![CDATA[When user is on the amazon homepage.........................................passed
+And user hover over account&lists...........................................passed
+And user clicks on Sign in button...........................................passed
+And user enters valid "selim.ocakdan333@gmail.com" address..................passed
+And user clicks on Continue button..........................................passed
+Then user gets email error..................................................passed
 ]]>
-        </skipped>
+        </system-out>
     </testcase>
 </testsuite>
